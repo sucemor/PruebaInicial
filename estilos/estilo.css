@@ -1,34 +1,50 @@
-.image {
-    width: 300px;
-    /* Cambia este valor al tamaño deseado */
-    height: 200px;
-    /* Cambia este valor al tamaño deseado */
-    display: inline-block;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 imágenes por fila */
-    gap: 20px;
-    /* Espacio entre las imágenes */
-}
-
-.header {
+.cabecera {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     width: 100%;
     position: fixed;
-    /* Fija la cabecera en la parte superior */
     top: 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Cuatro imágenes por fila */
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.nose {
+    margin: 10px;
+    text-align: center;
+}
+
+.nose img {
+    width: 200px;
+    /* Tamaño uniforme para todas las imágenes */
+    height: auto;
+}
+
+/* Cambiar el tipo de letra de la cabecera */
+.cabecera h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    margin: 0;
+}
+
+.precio {
+    font-weight: bold;
+    margin-top: 10px;
 }
